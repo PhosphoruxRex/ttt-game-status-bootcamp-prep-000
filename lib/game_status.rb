@@ -44,3 +44,10 @@ def over?(board)
     true
   end
 end
+
+def winner?(board)
+  pieces = won?(board)
+  if pieces
+    board[pieces[0]]
+  end
+end
