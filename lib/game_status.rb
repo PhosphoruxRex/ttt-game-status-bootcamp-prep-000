@@ -21,9 +21,8 @@ def won?(board)
     WIN_COMBINATIONS.any? do |combo|
       if (board[combo[0]] == player) && (board[combo[1]] == player) && (board[combo[2]] == player)
         return combo
-      else
-        return false
       end
     end
   end
+  return false
 end
