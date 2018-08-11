@@ -30,3 +30,11 @@ end
 def full?(board)
   board.none?{|piece| piece == " "}
 end
+
+def draw?(board)
+  if won?(board)
+    false
+  elsif full?(board)
+    true
+  end
+end
