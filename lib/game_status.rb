@@ -29,3 +29,4 @@ end
 
 def full?(board)
   board.none?{|i| == " "}
+end
